@@ -13,5 +13,4 @@ export const addToLS = id => {
     const data = getFromLS();
     data.push(id);
     setToLS(data);
-
 }

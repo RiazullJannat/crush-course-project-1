@@ -1,4 +1,4 @@
-const Developer = ({developer, handleBuy}) => {
+const SelectedDeveloper = ({developer, handleDelete}) => {
     const {id,name, image,role, skills, hiringCost} = developer;
     return (
         <div className="card bg-base-100  shadow-sm">
@@ -13,10 +13,10 @@ const Developer = ({developer, handleBuy}) => {
                 <p>Skills: {skills}</p>
                 <p>Price: {hiringCost}</p>
                 <div className="card-actions justify-end">
-                    <button className="btn btn-primary" onClick={()=>handleBuy(id, hiringCost)}>Buy Now</button>
+                    <button className="btn btn-primary" onClick={() => handleDelete(id, hiringCost)}>Delete Now</button>
                 </div>
             </div>
         </div>
     );
 };
-export default Developer;
+export default SelectedDeveloper;

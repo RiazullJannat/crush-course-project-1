@@ -3,14 +3,15 @@ import './App.css'
 import Nav from './components/Nav'
 import Banner from './components/Banner';
 import Developers from './components/Developers';
-import { getFromLS } from './localStorage';
+import { addToLS, getFromLS } from './localStorage';
+import { toast } from 'react-toastify';
 
 function App() {
   let [coins, setCoins] = useState(0);
   let [toggle, setToggle] = useState(true);
   let [selected, setSelected] = useState([]);
   const handleGetCoins = () => {
-    setCoins(coins + 10000);
+    setCoins(coins + 1000000);
   }
   const handleToggle = (bool) => {
     setToggle(bool);
@@ -19,17 +20,26 @@ function App() {
     let sd = getFromLS();
     setSelected(sd);
   }, [])
-  const handleBuy = (id) => {
+  const handleBuy = (id, amount) => {
     let alreadyExist = selected.find(d => d === id);
     if (selected.length < 6) {
       if (!alreadyExist) {
-        setSelected([...selected, id]);
+        if (coins > amount) {
+          addToLS(id);
+          setSelected(getFromLS);
+          setCoins(coins - amount);
+        }
+        else
+          toast.warn("out of coins.")
       }
       else
-        console.log("already exist....");
+        toast.warn("Developer already exist.");
     }
     else
-      console.log("you hit the limit....");
+      toast.warn("You hit the developer limit.");
+  }
+  const handleDelete=(id, amount)=>{
+    
   }
   return (
     <>
@@ -39,5 +49,4 @@ function App() {
     </>
   )
 }
-
 export default App
