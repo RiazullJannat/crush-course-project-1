@@ -1,23 +1,41 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import './App.css'
 import Nav from './components/Nav'
 import Banner from './components/Banner';
 import Developers from './components/Developers';
+import { getFromLS } from './localStorage';
 
 function App() {
   let [coins, setCoins] = useState(0);
   let [toggle, setToggle] = useState(true);
+  let [selected, setSelected] = useState([]);
   const handleGetCoins = () => {
     setCoins(coins + 10000);
   }
   const handleToggle = (bool) => {
     setToggle(bool);
   }
+  useEffect(() => {
+    let sd = getFromLS();
+    setSelected(sd);
+  }, [])
+  const handleBuy = (id) => {
+    let alreadyExist = selected.find(d => d === id);
+    if (selected.length < 6) {
+      if (!alreadyExist) {
+        setSelected([...selected, id]);
+      }
+      else
+        console.log("already exist....");
+    }
+    else
+      console.log("you hit the limit....");
+  }
   return (
     <>
       <Nav coins={coins} />
       <Banner handleGetCoins={handleGetCoins} />
-      <Developers handleToggle={handleToggle}  toggle={toggle}/>
+      <Developers handleToggle={handleToggle} toggle={toggle} selected={selected} handleBuy={handleBuy} />
     </>
   )
 }
