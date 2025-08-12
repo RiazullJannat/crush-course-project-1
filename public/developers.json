@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "name": "Ayaan Rahman",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Frontend Developer",
+        "skills": "React, Tailwind CSS",
+        "hiringCost": 120000
+    },
+    {
+        "id": 2,
+        "name": "Sophia Lee",
+        "country": "USA",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Backend Developer",
+        "skills": "Node.js, MongoDB",
+        "hiringCost": 150000
+    },
+    {
+        "id": 3,
+        "name": "Kazi Tanvir",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Full Stack Developer",
+        "skills": "MERN, TypeScript",
+        "hiringCost": 180000
+    },
+    {
+        "id": 4,
+        "name": "Liam Smith",
+        "country": "Canada",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "DevOps Engineer",
+        "skills": "Docker, AWS",
+        "hiringCost": 140000
+    },
+    {
+        "id": 5,
+        "name": "Arifa Chowdhury",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "UI/UX Designer",
+        "skills": "Figma, Adobe XD",
+        "hiringCost": 110000
+    },
+    {
+        "id": 6,
+        "name": "Ethan Cooper",
+        "country": "Australia",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Mobile App Developer",
+        "skills": "Flutter, Dart",
+        "hiringCost": 135000
+    },
+    {
+        "id": 7,
+        "name": "Mira Sultana",
+        "country": "India",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Frontend Developer",
+        "skills": "Vue.js, Sass",
+        "hiringCost": 125000
+    },
+    {
+        "id": 8,
+        "name": "Daniel Kim",
+        "country": "South Korea",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Data Scientist",
+        "skills": "Python, Pandas, ML",
+        "hiringCost": 160000
+    },
+    {
+        "id": 9,
+        "name": "Linda Garza",
+        "country": "Mexico",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "QA Engineer",
+        "skills": "Selenium, Jest",
+        "hiringCost": 100000
+    },
+    {
+        "id": 10,
+        "name": "Usama Ali",
+        "country": "Pakistan",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Backend Developer",
+        "skills": "Laravel, MySQL",
+        "hiringCost": 120000
+    },
+    {
+        "id": 11,
+        "name": "Jenny Wu",
+        "country": "China",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Cloud Engineer",
+        "skills": "Azure, Kubernetes",
+        "hiringCost": 150000
+    },
+    {
+        "id": 12,
+        "name": "Ahmed Noman",
+        "country": "Egypt",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Cybersecurity Expert",
+        "skills": "Ethical Hacking, Firewall",
+        "hiringCost": 155000
+    },
+    {
+        "id": 13,
+        "name": "Fatima Naz",
+        "country": "Pakistan",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "AI Developer",
+        "skills": "TensorFlow, Python",
+        "hiringCost": 165000
+    },
+    {
+        "id": 14,
+        "name": "Alex Johnson",
+        "country": "UK",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Tech Lead",
+        "skills": "System Design, Leadership",
+        "hiringCost": 200000
+    },
+    {
+        "id": 15,
+        "name": "Naima Jahan",
+        "country": "Bangladesh",
+        "image": "https://i.ibb.co.com/C32YDT6B/developer.jpg",
+        "role": "Software Engineer",
+        "skills": "Java, Spring Boot",
+        "hiringCost": 130000
+    }
+]
